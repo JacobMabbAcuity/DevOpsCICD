@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Demo Table</name>
+        <order/>
+        <roles>x_acuit_ci_cd_pipe.demo_table_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 16:07:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b945e001b1b151003d8dd33dd4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demo Table</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name>sys_ui_application_5b945e001b1b151003d8dd33dd4bcbe1</sys_update_name>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 16:07:36</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</application>
+        <file_path/>
+        <instance_id>a0e0bd23db18bb000b9d21c40596199b</instance_id>
+        <instance_name>acuityincdemo3</instance_name>
+        <name>sys_ui_application_5b945e001b1b151003d8dd33dd4bcbe1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Demo Table</name><order/><roles>x_acuit_ci_cd_pipe.demo_table_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>jacob.mabb@myacuity.com</sys_created_by><sys_created_on>2022-11-16 16:07:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b945e001b1b151003d8dd33dd4bcbe1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Demo Table</sys_name><sys_overrides/><sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package><sys_policy/><sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope><sys_update_name>sys_ui_application_5b945e001b1b151003d8dd33dd4bcbe1</sys_update_name><sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by><sys_updated_on>2022-11-16 16:07:36</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-1518652299</payload_hash>
+        <record_name>Demo Table</record_name>
+        <reverted_from/>
+        <source>80745a001b1b151003d8dd33dd4bcb7f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 16:07:36</sys_created_on>
+        <sys_id>d7945e001b1b151003d8dd33dd4bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18481321e400000001</sys_recorded_at>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 16:07:36</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>df945e00f81b15108fe15e627a2eabef</update_guid>
+        <update_guid_history>df945e00f81b15108fe15e627a2eabef:-1518652299</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 16:08:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>1bf7a53cafed4e2a9481c8e63ce6ac04</sys_id>
+        <sys_metadata>5b945e001b1b151003d8dd33dd4bcbe1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demo Table</sys_name>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_scope_delete display_value="">b456db33ac04493c8ff607a8af5476e9</sys_scope_delete>
+        <sys_update_name>sys_ui_application_5b945e001b1b151003d8dd33dd4bcbe1</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_5b945e001b1b151003d8dd33dd4bcbe1">d7945e001b1b151003d8dd33dd4bcbf0</sys_update_version>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 16:08:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
