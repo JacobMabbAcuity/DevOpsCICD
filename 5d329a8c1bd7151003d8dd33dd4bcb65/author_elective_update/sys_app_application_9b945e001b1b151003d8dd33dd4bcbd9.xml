@@ -52,7 +52,7 @@
         <update_guid_history>5b945e00be1b151099caca6a19963cdc:150041016</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Demo Table">0ac4d2401b1b151003d8dd33dd4bcbcb</sys_audit_delete>
+        <sys_audit_delete display_value="">0ac4d2401b1b151003d8dd33dd4bcbcb</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
         <sys_created_on>2022-11-16 16:08:19</sys_created_on>

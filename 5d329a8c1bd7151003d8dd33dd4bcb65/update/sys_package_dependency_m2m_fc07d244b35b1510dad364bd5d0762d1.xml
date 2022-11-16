@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">9ecdff941b101110dad3a9bd2a4bcb1c</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 16:18:04</sys_created_on>
+        <sys_id>fc07d244b35b1510dad364bd5d0762d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 16:18:04</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
