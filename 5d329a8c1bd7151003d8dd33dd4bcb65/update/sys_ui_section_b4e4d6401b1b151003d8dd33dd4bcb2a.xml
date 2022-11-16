@@ -140,6 +140,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>new_field</element>
+            <position>10</position>
+            <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+            <sys_created_on>2022-11-16 17:02:38</sys_created_on>
+            <sys_id>a5316e8c1b1b151003d8dd33dd4bcb3d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_acuit_ci_cd_pipe_demo_table" sys_domain="global" view="Default view">b4e4d6401b1b151003d8dd33dd4bcb2a</sys_ui_section>
+            <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+            <sys_updated_on>2022-11-16 17:02:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

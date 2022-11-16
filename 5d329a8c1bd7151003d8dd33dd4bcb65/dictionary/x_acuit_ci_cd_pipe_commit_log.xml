@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Commit Log" max_length="40" name="x_acuit_ci_cd_pipe_commit_log" type="collection"/>
+</database>

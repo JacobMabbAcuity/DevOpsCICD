@@ -2,35 +2,33 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>cicd_pipeline</internal_name>
-        <label_cache>[{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.rollback_version","label":"3 - Install Application With Scope➛Rollback Version","reference_display":"Rollback Version","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"efffac56-cfea-4732-8856-580873ceb6a2"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.__dont_treat_as_error__","label":"3 - Install Application With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"46b24db4-5f0c-4a5b-aa9c-24610b4b84f3"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.__action_status__","label":"3 - Install Application With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD70fa65aa25123010c92e5df79390971c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"51deebfe-6265-48de-b7e0-2616ef23b438"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.progress_id","label":"3 - Install Application With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a4652904-36f0-455e-9908-f35bee60db83"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.progress_url","label":"3 - Install Application With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c47ca0be-29ba-4432-8049-c0318228a188"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.error","label":"3 - Install Application With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03d6e464-10ef-4e9e-8482-8fdaa1ded3a9"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_detail","label":"3 - Install Application With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7bb51a5a-2df4-41e3-b6bf-2dace5bf4b93"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_message","label":"3 - Install Application With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"98ed3487-fe58-4c28-a4f7-ac2270cac8cd"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_label","label":"3 - Install Application With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"440021fc-0cd6-419c-8ad9-355e8950c6dc"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status","label":"3 - Install Application With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"90057591-82b1-4cdc-a03a-29993ba9c0bf"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.http_status","label":"3 - Install Application With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"502966bd-4e5f-4449-aea5-26192ba61b74"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.__dont_treat_as_error__","label":"2 - Publish Application With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"dd8b5fc6-47aa-4300-a39b-be4aaf71ced4"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.__action_status__","label":"2 - Publish Application With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf1a829e6f41230108833a65e569be128","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"eaddc2eb-f25d-432c-84d5-db3672dd4fe0"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.progress_id","label":"2 - Publish Application With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0e101257-c798-4188-a8db-d6f75ba1dff0"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.progress_url","label":"2 - Publish Application With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f58e6bba-5fe4-4ef2-b330-470e6e9fb24e"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.error","label":"2 - Publish Application With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfbd8e4f-8abc-4db1-afc4-cd9143b0c3a9"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_detail","label":"2 - Publish Application With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0210b565-a7b3-402c-ac42-11f0224d8d3c"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_message","label":"2 - Publish Application With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"222d0693-9372-4473-9737-bbbe44d0e907"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_label","label":"2 - Publish Application With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"39b51928-27c4-419a-85ca-669131abf7c7"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status","label":"2 - Publish Application With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a906a99a-af4f-4537-81ca-bf301195584b"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.http_status","label":"2 - Publish Application With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c119955d-3361-4e2d-98ba-6b54c0868d82"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status","label":"1 - Apply Changes From Source Control With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cba6f28b-43d4-4d51-89ab-44c0c318426f"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.error","label":"1 - Apply Changes From Source Control With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"98902130-5bce-4d12-8084-32cd1e92048c"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.progress_url","label":"1 - Apply Changes From Source Control With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b0cb4096-95f1-480e-b798-ad83a9ab68f2"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_label","label":"1 - Apply Changes From Source Control With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e9c29b0d-9923-41b3-a6ec-c4b3dd23bef4"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.http_status","label":"1 - Apply Changes From Source Control With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c39351f6-936f-461c-a662-5416b122dcfd"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_message","label":"1 - Apply Changes From Source Control With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bae0b22d-5e04-4398-9363-e801b2dc1298"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_detail","label":"1 - Apply Changes From Source Control With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f40c7ecd-dde5-4ef4-8ebd-6014144c5517"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.progress_id","label":"1 - Apply Changes From Source Control With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2a0a5f7b-6a8a-4543-8a87-7612084c7261"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.__action_status__","label":"1 - Apply Changes From Source Control With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDeb78bce6f712301068329383fcabfe0b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d2b3237c-8740-4079-9133-037600036406"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.__dont_treat_as_error__","label":"1 - Apply Changes From Source Control With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1f6c96c7-1c45-4f0a-92e0-a9a7b5ea315a"}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.__dont_treat_as_error__","label":"1 - Apply Changes From Source Control With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1f6c96c7-1c45-4f0a-92e0-a9a7b5ea315a"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.__action_status__","label":"1 - Apply Changes From Source Control With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDeb78bce6f712301068329383fcabfe0b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d2b3237c-8740-4079-9133-037600036406"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.progress_id","label":"1 - Apply Changes From Source Control With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2a0a5f7b-6a8a-4543-8a87-7612084c7261"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_detail","label":"1 - Apply Changes From Source Control With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f40c7ecd-dde5-4ef4-8ebd-6014144c5517"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_message","label":"1 - Apply Changes From Source Control With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bae0b22d-5e04-4398-9363-e801b2dc1298"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.http_status","label":"1 - Apply Changes From Source Control With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c39351f6-936f-461c-a662-5416b122dcfd"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_label","label":"1 - Apply Changes From Source Control With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e9c29b0d-9923-41b3-a6ec-c4b3dd23bef4"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.progress_url","label":"1 - Apply Changes From Source Control With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b0cb4096-95f1-480e-b798-ad83a9ab68f2"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.error","label":"1 - Apply Changes From Source Control With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"98902130-5bce-4d12-8084-32cd1e92048c"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status","label":"1 - Apply Changes From Source Control With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cba6f28b-43d4-4d51-89ab-44c0c318426f"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.http_status","label":"2 - Publish Application With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c119955d-3361-4e2d-98ba-6b54c0868d82"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status","label":"2 - Publish Application With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a906a99a-af4f-4537-81ca-bf301195584b"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_label","label":"2 - Publish Application With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"39b51928-27c4-419a-85ca-669131abf7c7"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_message","label":"2 - Publish Application With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"222d0693-9372-4473-9737-bbbe44d0e907"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_detail","label":"2 - Publish Application With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0210b565-a7b3-402c-ac42-11f0224d8d3c"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.error","label":"2 - Publish Application With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfbd8e4f-8abc-4db1-afc4-cd9143b0c3a9"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.progress_url","label":"2 - Publish Application With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f58e6bba-5fe4-4ef2-b330-470e6e9fb24e"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.progress_id","label":"2 - Publish Application With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0e101257-c798-4188-a8db-d6f75ba1dff0"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.__action_status__","label":"2 - Publish Application With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf1a829e6f41230108833a65e569be128","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"eaddc2eb-f25d-432c-84d5-db3672dd4fe0"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.__dont_treat_as_error__","label":"2 - Publish Application With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"dd8b5fc6-47aa-4300-a39b-be4aaf71ced4"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.http_status","label":"3 - Install Application With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"502966bd-4e5f-4449-aea5-26192ba61b74"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status","label":"3 - Install Application With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"90057591-82b1-4cdc-a03a-29993ba9c0bf"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_label","label":"3 - Install Application With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"440021fc-0cd6-419c-8ad9-355e8950c6dc"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_message","label":"3 - Install Application With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"98ed3487-fe58-4c28-a4f7-ac2270cac8cd"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_detail","label":"3 - Install Application With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7bb51a5a-2df4-41e3-b6bf-2dace5bf4b93"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.error","label":"3 - Install Application With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03d6e464-10ef-4e9e-8482-8fdaa1ded3a9"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.progress_url","label":"3 - Install Application With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c47ca0be-29ba-4432-8049-c0318228a188"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.progress_id","label":"3 - Install Application With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a4652904-36f0-455e-9908-f35bee60db83"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.__action_status__","label":"3 - Install Application With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD70fa65aa25123010c92e5df79390971c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"51deebfe-6265-48de-b7e0-2616ef23b438"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.__dont_treat_as_error__","label":"3 - Install Application With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"46b24db4-5f0c-4a5b-aa9c-24610b4b84f3"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.rollback_version","label":"3 - Install Application With Scope➛Rollback Version","reference_display":"Rollback Version","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"efffac56-cfea-4732-8856-580873ceb6a2"}}]</label_cache>
+        <master_snapshot>47a82e441b5b151003d8dd33dd4bcbac</master_snapshot>
         <name>CI/CD Pipeline</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id/>
+        <remote_trigger_id>28b8ae441b5b151003d8dd33dd4bcb8c</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
         <sys_created_on>2022-11-16 16:29:27</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a79996841b1b151003d8dd33dd4bcb9e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CI/CD Pipeline</sys_name>
         <sys_overrides/>
         <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
@@ -38,11 +36,68 @@
         <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
         <sys_update_name>sys_hub_flow_a79996841b1b151003d8dd33dd4bcb9e</sys_update_name>
         <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
-        <sys_updated_on>2022-11-16 16:58:07</sys_updated_on>
+        <sys_updated_on>2022-11-16 17:35:20</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=a79996841b1b151003d8dd33dd4bcb9e"/>
     <sys_variable_value action="delete_multiple" query="document_key=a79996841b1b151003d8dd33dd4bcb9e"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2022-11-01 08:00:00</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28b8ae441b5b151003d8dd33dd4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:20</sys_updated_on>
+        <time/>
+        <timer_type>0</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:28b8ae441b5b151003d8dd33dd4bcb8c^sys_idNOT INecb8ae441b5b151003d8dd33dd4bcb8c"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:28b8ae441b5b151003d8dd33dd4bcb8c</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Jacob Mabb">ea67f63b1bc1911003d8dd33dd4bcbc0</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2022-11-01 08:00:00</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('28b8ae441b5b151003d8dd33dd4bcb8c');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:20</sys_created_on>
+        <sys_id>ecb8ae441b5b151003d8dd33dd4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:20</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">28b8ae441b5b151003d8dd33dd4bcb8c</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a79996841b1b151003d8dd33dd4bcb9e"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=a79996841b1b151003d8dd33dd4bcb9e^sys_idNOT IN850a9e841b1b151003d8dd33dd4bcbdf"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -53,10 +108,10 @@
         <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
         <sys_created_on>2022-11-16 16:31:12</sys_created_on>
         <sys_id>850a9e841b1b151003d8dd33dd4bcbdf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
-        <sys_updated_on>2022-11-16 16:58:07</sys_updated_on>
+        <sys_updated_on>2022-11-16 17:35:20</sys_updated_on>
         <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -101,7 +156,6 @@
         <action_type display_value="Install Application With Scope">a32920cd77633300d4bdaeca7810619f</action_type>
         <action_type_parent/>
         <comment>Install from Application Repo to myacuitydemo1</comment>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="CI/CD Pipeline">a79996841b1b151003d8dd33dd4bcb9e</flow>
         <order>3</order>
@@ -110,10 +164,10 @@
         <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
         <sys_created_on>2022-11-16 16:54:04</sys_created_on>
         <sys_id>404fd20c1b1b151003d8dd33dd4bcbaf</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
-        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
-        <sys_updated_on>2022-11-16 16:58:07</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:31</sys_updated_on>
         <ui_id>1eba1beb-1366-4ce7-a764-62f64fc9acc6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=404fd20c1b1b151003d8dd33dd4bcbaf"/>
@@ -194,7 +248,6 @@
         <action_type display_value="Publish Application With Scope">05896ccd77633300d4bdaeca781061cc</action_type>
         <action_type_parent/>
         <comment>Publish to Application Repo from acuityincdemo4</comment>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="CI/CD Pipeline">a79996841b1b151003d8dd33dd4bcb9e</flow>
         <order>2</order>
@@ -203,10 +256,10 @@
         <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
         <sys_created_on>2022-11-16 16:54:03</sys_created_on>
         <sys_id>444fd20c1b1b151003d8dd33dd4bcb98</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
-        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
-        <sys_updated_on>2022-11-16 16:58:07</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:31</sys_updated_on>
         <ui_id>f84376ae-da3c-4704-922c-9e02fe7495e2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=444fd20c1b1b151003d8dd33dd4bcb98"/>
@@ -299,7 +352,6 @@
         <action_type display_value="Apply Changes From Source Control With Scope">045c72b877433300d4bdaeca7810618f</action_type>
         <action_type_parent/>
         <comment>Install branch to acuityincdemo4 via GitHub</comment>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="CI/CD Pipeline">a79996841b1b151003d8dd33dd4bcb9e</flow>
         <order>1</order>
@@ -308,10 +360,10 @@
         <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
         <sys_created_on>2022-11-16 16:31:12</sys_created_on>
         <sys_id>950a9e841b1b151003d8dd33dd4bcbf5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
-        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
-        <sys_updated_on>2022-11-16 16:58:07</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:31</sys_updated_on>
         <ui_id>31d0f6c8-3942-4903-8741-59a03c63cab9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=950a9e841b1b151003d8dd33dd4bcbf5"/>
@@ -396,6 +448,405 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a79996841b1b151003d8dd33dd4bcb9e"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a79996841b1b151003d8dd33dd4bcb9e"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a79996841b1b151003d8dd33dd4bcb9e"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a79996841b1b151003d8dd33dd4bcb9e"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a79996841b1b151003d8dd33dd4bcb9e^sys_idNOT IN28b8ae441b5b151003d8dd33dd4bcb8f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"28b8ae441b5b151003d8dd33dd4bcb8f","name":"plan","plan_signature":null}}</plan>
+        <plan_id>a79996841b1b151003d8dd33dd4bcb9e</plan_id>
+        <snapshot>9fb8a2841b5b151003d8dd33dd4bcbce</snapshot>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28b8ae441b5b151003d8dd33dd4bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:20</sys_updated_on>
+        <trigger display_value="">28b8ae441b5b151003d8dd33dd4bcb8c</trigger>
+    </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a79996841b1b151003d8dd33dd4bcb9e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cicd_pipeline</internal_name>
+        <label_cache>[{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.__dont_treat_as_error__","label":"1 - Apply Changes From Source Control With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1f6c96c7-1c45-4f0a-92e0-a9a7b5ea315a"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.__action_status__","label":"1 - Apply Changes From Source Control With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDeb78bce6f712301068329383fcabfe0b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d2b3237c-8740-4079-9133-037600036406"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.progress_id","label":"1 - Apply Changes From Source Control With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2a0a5f7b-6a8a-4543-8a87-7612084c7261"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_detail","label":"1 - Apply Changes From Source Control With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f40c7ecd-dde5-4ef4-8ebd-6014144c5517"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_message","label":"1 - Apply Changes From Source Control With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bae0b22d-5e04-4398-9363-e801b2dc1298"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.http_status","label":"1 - Apply Changes From Source Control With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c39351f6-936f-461c-a662-5416b122dcfd"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status_label","label":"1 - Apply Changes From Source Control With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e9c29b0d-9923-41b3-a6ec-c4b3dd23bef4"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.progress_url","label":"1 - Apply Changes From Source Control With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b0cb4096-95f1-480e-b798-ad83a9ab68f2"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.error","label":"1 - Apply Changes From Source Control With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"98902130-5bce-4d12-8084-32cd1e92048c"}},{"name":"31d0f6c8-3942-4903-8741-59a03c63cab9.status","label":"1 - Apply Changes From Source Control With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cba6f28b-43d4-4d51-89ab-44c0c318426f"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.http_status","label":"2 - Publish Application With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c119955d-3361-4e2d-98ba-6b54c0868d82"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status","label":"2 - Publish Application With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a906a99a-af4f-4537-81ca-bf301195584b"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_label","label":"2 - Publish Application With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"39b51928-27c4-419a-85ca-669131abf7c7"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_message","label":"2 - Publish Application With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"222d0693-9372-4473-9737-bbbe44d0e907"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.status_detail","label":"2 - Publish Application With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0210b565-a7b3-402c-ac42-11f0224d8d3c"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.error","label":"2 - Publish Application With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dfbd8e4f-8abc-4db1-afc4-cd9143b0c3a9"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.progress_url","label":"2 - Publish Application With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f58e6bba-5fe4-4ef2-b330-470e6e9fb24e"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.progress_id","label":"2 - Publish Application With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0e101257-c798-4188-a8db-d6f75ba1dff0"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.__action_status__","label":"2 - Publish Application With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf1a829e6f41230108833a65e569be128","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"eaddc2eb-f25d-432c-84d5-db3672dd4fe0"}},{"name":"f84376ae-da3c-4704-922c-9e02fe7495e2.__dont_treat_as_error__","label":"2 - Publish Application With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"dd8b5fc6-47aa-4300-a39b-be4aaf71ced4"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.http_status","label":"3 - Install Application With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"502966bd-4e5f-4449-aea5-26192ba61b74"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status","label":"3 - Install Application With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"90057591-82b1-4cdc-a03a-29993ba9c0bf"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_label","label":"3 - Install Application With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"440021fc-0cd6-419c-8ad9-355e8950c6dc"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_message","label":"3 - Install Application With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"98ed3487-fe58-4c28-a4f7-ac2270cac8cd"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.status_detail","label":"3 - Install Application With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7bb51a5a-2df4-41e3-b6bf-2dace5bf4b93"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.error","label":"3 - Install Application With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03d6e464-10ef-4e9e-8482-8fdaa1ded3a9"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.progress_url","label":"3 - Install Application With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c47ca0be-29ba-4432-8049-c0318228a188"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.progress_id","label":"3 - Install Application With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a4652904-36f0-455e-9908-f35bee60db83"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.__action_status__","label":"3 - Install Application With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD70fa65aa25123010c92e5df79390971c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"51deebfe-6265-48de-b7e0-2616ef23b438"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.__dont_treat_as_error__","label":"3 - Install Application With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"46b24db4-5f0c-4a5b-aa9c-24610b4b84f3"}},{"name":"1eba1beb-1366-4ce7-a764-62f64fc9acc6.rollback_version","label":"3 - Install Application With Scope➛Rollback Version","reference_display":"Rollback Version","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"efffac56-cfea-4732-8856-580873ceb6a2"}}]</label_cache>
+        <master>true</master>
+        <name>CI/CD Pipeline</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CI/CD Pipeline">a79996841b1b151003d8dd33dd4bcb9e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>47a82e441b5b151003d8dd33dd4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_variable_value action="delete_multiple" query="document_key=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=47a82e441b5b151003d8dd33dd4bcbac^sys_idNOT INdba86e441b5b151003d8dd33dd4bcb0c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline">47a82e441b5b151003d8dd33dd4bcbac</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>dba86e441b5b151003d8dd33dd4bcb0c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:20</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dba86e441b5b151003d8dd33dd4bcb0c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>dba86e441b5b151003d8dd33dd4bcb0c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>5ba86e441b5b151003d8dd33dd4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>2022-11-01 01:00:00</value>
+        <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=dba86e441b5b151003d8dd33dd4bcb0c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=47a82e441b5b151003d8dd33dd4bcbac^sys_idNOT INc7a82e441b5b151003d8dd33dd4bcbad"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>47a82e441b5b151003d8dd33dd4bcbac</id>
+        <name>CI/CD Pipeline</name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>c7a82e441b5b151003d8dd33dd4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c7a82e441b5b151003d8dd33dd4bcbad"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=47a82e441b5b151003d8dd33dd4bcbac^sys_idNOT IN13a86e441b5b151003d8dd33dd4bcb09,5ba82e441b5b151003d8dd33dd4bcbd9,83a82e441b5b151003d8dd33dd4bcbc3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Install Application With Scope">a32920cd77633300d4bdaeca7810619f</action_type>
+        <action_type_parent display_value="Install Application With Scope">2250604977633300d4bdaeca78106140</action_type_parent>
+        <comment>Install from Application Repo to myacuitydemo1</comment>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline">47a82e441b5b151003d8dd33dd4bcbac</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>13a86e441b5b151003d8dd33dd4bcb09</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <ui_id>1eba1beb-1366-4ce7-a764-62f64fc9acc6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=13a86e441b5b151003d8dd33dd4bcb09"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>13a86e441b5b151003d8dd33dd4bcb09</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>1fa86e441b5b151003d8dd33dd4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">fb2920cd77633300d4bdaeca781061bc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>13a86e441b5b151003d8dd33dd4bcb09</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>57a86e441b5b151003d8dd33dd4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Auto Upgrade Base Application">fc73c0c677321010141725e3681061a6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>13a86e441b5b151003d8dd33dd4bcb09</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>93a86e441b5b151003d8dd33dd4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>https://myacuitydemo1.service-now.com/</value>
+        <variable display_value="Instance URL">bf4555967700001038e286a2681061fe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>13a86e441b5b151003d8dd33dd4bcb09</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>dfa86e441b5b151003d8dd33dd4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>x_acuit_ci_cd_pipe</value>
+        <variable display_value="Scope">232920cd77633300d4bdaeca781061a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_a32920cd77633300d4bdaeca7810619f^id=13a86e441b5b151003d8dd33dd4bcb09"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=13a86e441b5b151003d8dd33dd4bcb09^sys_idNOT IN97a86e441b5b151003d8dd33dd4bcb0a"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>version</input_name>
+        <instance>13a86e441b5b151003d8dd33dd4bcb09</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"version":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar gr \u003d new GlideRecord(\u0027sys_app\u0027);\ngr.get(\u00275d329a8c1bd7151003d8dd33dd4bcb65\u0027);\nvar version \u003d gr.getValue(\u0027version\u0027);\nvar increment \u003d parseInt(version.split(\u0027.\u0027)[2]) + 1;\nvar newVersion \u003d version.split(\u0027.\u0027)[0] + \u0027.\u0027 + version.split(\u0027.\u0027)[1] + \u0027.\u0027 + increment;\nreturn newVersion;"}}</script>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>97a86e441b5b151003d8dd33dd4bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=13a86e441b5b151003d8dd33dd4bcb09"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Publish Application With Scope">05896ccd77633300d4bdaeca781061cc</action_type>
+        <action_type_parent display_value="Publish Application With Scope">2f21dc0177633300d4bdaeca78106163</action_type_parent>
+        <comment>Publish to Application Repo from acuityincdemo4</comment>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline">47a82e441b5b151003d8dd33dd4bcbac</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>5ba82e441b5b151003d8dd33dd4bcbd9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <ui_id>f84376ae-da3c-4704-922c-9e02fe7495e2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5ba82e441b5b151003d8dd33dd4bcbd9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5ba82e441b5b151003d8dd33dd4bcbd9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>13a82e441b5b151003d8dd33dd4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>https://acuityincdemo4.service-now.com/</value>
+        <variable display_value="Instance URL">ee23a5087780001038e286a268106198</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5ba82e441b5b151003d8dd33dd4bcbd9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>5fa82e441b5b151003d8dd33dd4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>x_acuit_ci_cd_pipe</value>
+        <variable display_value="Scope">81896ccd77633300d4bdaeca781061cd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5ba82e441b5b151003d8dd33dd4bcbd9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:15</sys_created_on>
+        <sys_id>9ba82e441b5b151003d8dd33dd4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:15</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">89896ccd77633300d4bdaeca781061e2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_05896ccd77633300d4bdaeca781061cc^id=5ba82e441b5b151003d8dd33dd4bcbd9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ba82e441b5b151003d8dd33dd4bcbd9^sys_idNOT IN17a82e441b5b151003d8dd33dd4bcbdb,1ba82e441b5b151003d8dd33dd4bcbdb,1fa82e441b5b151003d8dd33dd4bcbda"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>instance_url</input_name>
+        <instance>5ba82e441b5b151003d8dd33dd4bcbd9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"instance_url":{"scriptActive":false}}</script>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>17a82e441b5b151003d8dd33dd4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>version</input_name>
+        <instance>5ba82e441b5b151003d8dd33dd4bcbd9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"version":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar gr \u003d new GlideRecord(\u0027sys_app\u0027);\ngr.get(\u00275d329a8c1bd7151003d8dd33dd4bcb65\u0027);\nvar version \u003d gr.getValue(\u0027version\u0027);\nvar increment \u003d parseInt(version.split(\u0027.\u0027)[2]) + 1;\nvar newVersion \u003d version.split(\u0027.\u0027)[0] + \u0027.\u0027 + version.split(\u0027.\u0027)[1] + \u0027.\u0027 + increment;\nreturn newVersion;"}}</script>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>1ba82e441b5b151003d8dd33dd4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>credential_alias</input_name>
+        <instance>5ba82e441b5b151003d8dd33dd4bcbd9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"credential_alias":{"scriptActive":false}}</script>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>1fa82e441b5b151003d8dd33dd4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5ba82e441b5b151003d8dd33dd4bcbd9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Apply Changes From Source Control With Scope">045c72b877433300d4bdaeca7810618f</action_type>
+        <action_type_parent display_value="Apply Changes From Source Control With Scope">1d04b6b477433300d4bdaeca78106184</action_type_parent>
+        <comment>Install branch to acuityincdemo4 via GitHub</comment>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline">47a82e441b5b151003d8dd33dd4bcbac</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>83a82e441b5b151003d8dd33dd4bcbc3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <ui_id>31d0f6c8-3942-4903-8741-59a03c63cab9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=83a82e441b5b151003d8dd33dd4bcbc3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a82e441b5b151003d8dd33dd4bcbc3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>13a82e441b5b151003d8dd33dd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <value>x_acuit_ci_cd_pipe</value>
+        <variable display_value="App Scope">805c72b877433300d4bdaeca78106190</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a82e441b5b151003d8dd33dd4bcbc3</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>5fa82e441b5b151003d8dd33dd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <value>https://acuityincdemo4.service-now.com/</value>
+        <variable display_value="Instance URL">e070f94477c0001038e286a26810617c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a82e441b5b151003d8dd33dd4bcbc3</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>93a82e441b5b151003d8dd33dd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">91aa986877133300d4bdaeca781061d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>83a82e441b5b151003d8dd33dd4bcbc3</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-16 17:35:14</sys_created_on>
+        <sys_id>9ba82e441b5b151003d8dd33dd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-16 17:35:14</sys_updated_on>
+        <value>sn_instances/acuityincdemo3</value>
+        <variable display_value="Branch Name">8c5c72b877433300d4bdaeca78106195</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f^id=83a82e441b5b151003d8dd33dd4bcbc3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=83a82e441b5b151003d8dd33dd4bcbc3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=83a82e441b5b151003d8dd33dd4bcbc3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_47a82e441b5b151003d8dd33dd4bcbac"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a79996841b1b151003d8dd33dd4bcb9e</sys_id>
+        <latest_snapshot>47a82e441b5b151003d8dd33dd4bcbac</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch7a-09-20-2022_10-04-2022_1309.zip</compiler_build>
+    </sys_hub_flow>
 </record_update>

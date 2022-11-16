@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Commit Log" language="en" table="x_acuit_ci_cd_pipe_commit_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Commit Log</label>
+            <language>en</language>
+            <name>x_acuit_ci_cd_pipe_commit_log</name>
+            <plural>Commit Logs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+            <sys_created_on>2022-11-16 17:12:12</sys_created_on>
+            <sys_id>a563ae001b5b151003d8dd33dd4bcb2b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Commit Log</sys_name>
+            <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+            <sys_update_name>sys_documentation_x_acuit_ci_cd_pipe_commit_log__en</sys_update_name>
+            <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+            <sys_updated_on>2022-11-16 17:12:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
