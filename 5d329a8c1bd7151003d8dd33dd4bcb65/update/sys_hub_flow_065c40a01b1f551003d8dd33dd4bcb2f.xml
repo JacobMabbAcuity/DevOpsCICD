@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cicd_pipeline__install_from_github</internal_name>
+        <label_cache>[{"name":"cdd33bc5-6b81-47dc-a097-71e0188ad8fc.scheduled_end_date_time","label":"6 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"cdd33bc5-6b81-47dc-a097-71e0188ad8fc.total_duration","label":"6 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.__dont_treat_as_error__","label":"3 - Get Execution Tracker Progress➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4963f3fc-b779-4a2a-9a75-15dea88f207f"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.__action_status__","label":"3 - Get Execution Tracker Progress➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD66c9d20c6c22301064b291b0d254280b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"54b0ac46-97ae-4b8e-919f-772a7bd40bb3"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.result_url","label":"3 - Get Execution Tracker Progress➛Result URL","reference_display":"Result URL","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"4e961a2d-0358-4075-8870-de60151a294c"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.result_id","label":"3 - Get Execution Tracker Progress➛Result ID","reference_display":"Result ID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"aa917b40-8dd8-4e76-bb37-b85e09098eb9"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.http_status","label":"3 - Get Execution Tracker Progress➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"abc8f70c-ad39-48c7-a938-718cc6b84c9e"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status_detail","label":"3 - Get Execution Tracker Progress➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"aba2693c-8e41-4197-85d2-c69a56226746"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status_message","label":"3 - Get Execution Tracker Progress➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"cb49cb57-a9e6-4ae3-be37-008513105ef0"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status_label","label":"3 - Get Execution Tracker Progress➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"d4e47a49-950f-4026-b9be-8a55ff5c8ca5"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.percent_complete","label":"3 - Get Execution Tracker Progress➛Percent Complete","reference_display":"Percent Complete","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"83b61b07-965f-472e-a17c-8ca96df80df0"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.error","label":"3 - Get Execution Tracker Progress➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2131edb5-0595-4477-a3e5-0c9fda01dc69"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status","label":"3 - Get Execution Tracker Progress➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"71330b47-3466-47ab-b95c-21b7b659a556"}},{"name":"subflow.branch","label":"Input➛branch","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"82ab3cb5-f8a8-4b0d-aaad-5617ae1c9648"}},{"name":"subflow.instance","label":"Input➛instance","reference":"","reference_display":"","type":"url","base_type":"url","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"6a3a1535-7548-4d79-93d4-c457ffc20c07"}},{"name":"subflow.scope","label":"Input➛scope","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"af3e8702-4223-4f40-9e74-5e605ff10e07"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.__dont_treat_as_error__","label":"1 - Apply Changes From Source Control With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1f6c96c7-1c45-4f0a-92e0-a9a7b5ea315a"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.__action_status__","label":"1 - Apply Changes From Source Control With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDeb78bce6f712301068329383fcabfe0b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d2b3237c-8740-4079-9133-037600036406"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.progress_id","label":"1 - Apply Changes From Source Control With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2a0a5f7b-6a8a-4543-8a87-7612084c7261"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status_detail","label":"1 - Apply Changes From Source Control With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f40c7ecd-dde5-4ef4-8ebd-6014144c5517"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status_message","label":"1 - Apply Changes From Source Control With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"bae0b22d-5e04-4398-9363-e801b2dc1298"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.http_status","label":"1 - Apply Changes From Source Control With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c39351f6-936f-461c-a662-5416b122dcfd"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status_label","label":"1 - Apply Changes From Source Control With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"e9c29b0d-9923-41b3-a6ec-c4b3dd23bef4"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.progress_url","label":"1 - Apply Changes From Source Control With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"b0cb4096-95f1-480e-b798-ad83a9ab68f2"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.error","label":"1 - Apply Changes From Source Control With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"98902130-5bce-4d12-8084-32cd1e92048c"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status","label":"1 - Apply Changes From Source Control With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"cba6f28b-43d4-4d51-89ab-44c0c318426f"}}]</label_cache>
+        <master_snapshot>fe8dc0241b1f551003d8dd33dd4bcb0c</master_snapshot>
+        <name>CI/CD Pipeline - Install From GitHub</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:29:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>065c40a01b1f551003d8dd33dd4bcb2f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CI/CD Pipeline - Install From GitHub</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name>sys_hub_flow_065c40a01b1f551003d8dd33dd4bcb2f</sys_update_name>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f^id=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT IN065cc0a01b1f551003d8dd33dd4bcb61"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>065c40a01b1f551003d8dd33dd4bcb2f</id>
+        <name>CI/CD Pipeline - Install From GitHub</name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:29:11</sys_created_on>
+        <sys_id>065cc0a01b1f551003d8dd33dd4bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:29:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=065cc0a01b1f551003d8dd33dd4bcb61"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT IN276dcce01b1f551003d8dd33dd4bcbab,636dcce01b1f551003d8dd33dd4bcba1,676dcce01b1f551003d8dd33dd4bcbae,e36dcce01b1f551003d8dd33dd4bcba8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=af3e8702-4223-4f40-9e74-5e605ff10e07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scope</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>scope</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</model>
+        <model_id>065c40a01b1f551003d8dd33dd4bcb2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>276dcce01b1f551003d8dd33dd4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=59c8fb64-cd83-4793-9c2d-85df54cc1cfc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>version</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>version</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</model>
+        <model_id>065c40a01b1f551003d8dd33dd4bcb2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:55</sys_created_on>
+        <sys_id>636dcce01b1f551003d8dd33dd4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=82ab3cb5-f8a8-4b0d-aaad-5617ae1c9648</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>branch</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>branch</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</model>
+        <model_id>065c40a01b1f551003d8dd33dd4bcb2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>676dcce01b1f551003d8dd33dd4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=url,uiTypeLabel=URL,uiUniqueId=6a3a1535-7548-4d79-93d4-c457ffc20c07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="URL">url</internal_type>
+        <label>instance</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</model>
+        <model_id>065c40a01b1f551003d8dd33dd4bcb2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>e36dcce01b1f551003d8dd33dd4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT IN6b6dcce01b1f551003d8dd33dd4bcbb3"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a5534a3f-3cfa-4766-b1e7-11177120c47a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</model>
+        <model_id>065c40a01b1f551003d8dd33dd4bcb2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>6b6dcce01b1f551003d8dd33dd4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT IN736d00241b1f551003d8dd33dd4bcb0c,b36dcce01b1f551003d8dd33dd4bcbe5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Execution Tracker Progress">ce5cf2b877433300d4bdaeca781061bc</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</flow>
+        <order>3</order>
+        <parent_ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>736d00241b1f551003d8dd33dd4bcb0c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <ui_id>46979ad8-3334-4c55-801f-5625b293b2b7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=736d00241b1f551003d8dd33dd4bcb0c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>736d00241b1f551003d8dd33dd4bcb0c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>736d00241b1f551003d8dd33dd4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">b09b58a877133300d4bdaeca781061ff</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=736d00241b1f551003d8dd33dd4bcb0c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>736d00241b1f551003d8dd33dd4bcb0c</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>3f6d00241b1f551003d8dd33dd4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ce5cf2b877433300d4bdaeca781061bc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>instance_url</field>
+        <id>736d00241b1f551003d8dd33dd4bcb0c</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>7b6d00241b1f551003d8dd33dd4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ce5cf2b877433300d4bdaeca781061bc</table>
+        <value>{{subflow.instance}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>progress_id</field>
+        <id>736d00241b1f551003d8dd33dd4bcb0c</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>ff6d00241b1f551003d8dd33dd4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ce5cf2b877433300d4bdaeca781061bc</table>
+        <value>{{fe52565d-1b17-4a80-8d31-ee71d65c5998.progress_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=736d00241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=736d00241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Apply Changes From Source Control With Scope">045c72b877433300d4bdaeca7810618f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>b36dcce01b1f551003d8dd33dd4bcbe5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <ui_id>fe52565d-1b17-4a80-8d31-ee71d65c5998</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b36dcce01b1f551003d8dd33dd4bcbe5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b36dcce01b1f551003d8dd33dd4bcbe5</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>bb6dcce01b1f551003d8dd33dd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">91aa986877133300d4bdaeca781061d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b36dcce01b1f551003d8dd33dd4bcbe5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>app_scope</field>
+        <id>b36dcce01b1f551003d8dd33dd4bcbe5</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>3b6dcce01b1f551003d8dd33dd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value>{{subflow.scope}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>branch_name</field>
+        <id>b36dcce01b1f551003d8dd33dd4bcbe5</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>b36dcce01b1f551003d8dd33dd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value>{{subflow.branch}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>b36dcce01b1f551003d8dd33dd4bcbe5</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>fb6dcce01b1f551003d8dd33dd4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>instance_url</field>
+        <id>b36dcce01b1f551003d8dd33dd4bcbe5</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>776dcce01b1f551003d8dd33dd4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value>{{subflow.instance}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b36dcce01b1f551003d8dd33dd4bcbe5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b36dcce01b1f551003d8dd33dd4bcbe5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT IN336d00241b1f551003d8dd33dd4bcb12,7f6dcce01b1f551003d8dd33dd4bcbe9,bb6d00241b1f551003d8dd33dd4bcb0e,c47d00241b1f551003d8dd33dd4bcb15"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7f6d00241b1f551003d8dd33dd4bcb11</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>error</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>93a4321a-7aac-49ed-806a-d47f5eb06c4e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>336d00241b1f551003d8dd33dd4bcb12</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <ui_id>e77067f3-f1e3-484b-adfe-28c9b603f247</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=336d00241b1f551003d8dd33dd4bcb12"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>336d00241b1f551003d8dd33dd4bcb12</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>8c7d00241b1f551003d8dd33dd4bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="error">6b6dcce01b1f551003d8dd33dd4bcbb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f^id=336d00241b1f551003d8dd33dd4bcb12"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=336d00241b1f551003d8dd33dd4bcb12"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=336d00241b1f551003d8dd33dd4bcb12"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">776dcce01b1f551003d8dd33dd4bcbe9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>7f6dcce01b1f551003d8dd33dd4bcbe9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7f6dcce01b1f551003d8dd33dd4bcbe9"/>
+    <sys_element_mapping action="delete_multiple" query="id=7f6dcce01b1f551003d8dd33dd4bcbe9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7f6dcce01b1f551003d8dd33dd4bcbe9</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>f36dcce01b1f551003d8dd33dd4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{46979ad8-3334-4c55-801f-5625b293b2b7.percent_complete}}=100﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f^id=7f6dcce01b1f551003d8dd33dd4bcbe9"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7f6dcce01b1f551003d8dd33dd4bcbe9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7f6dcce01b1f551003d8dd33dd4bcbe9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f76d00241b1f551003d8dd33dd4bcb0e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>bb6d00241b1f551003d8dd33dd4bcb0e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <ui_id>93a4321a-7aac-49ed-806a-d47f5eb06c4e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bb6d00241b1f551003d8dd33dd4bcb0e"/>
+    <sys_element_mapping action="delete_multiple" query="id=bb6d00241b1f551003d8dd33dd4bcb0e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>bb6d00241b1f551003d8dd33dd4bcb0e</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>3b6d00241b1f551003d8dd33dd4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{46979ad8-3334-4c55-801f-5625b293b2b7.http_status}}!=200﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f^id=bb6d00241b1f551003d8dd33dd4bcb0e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bb6d00241b1f551003d8dd33dd4bcb0e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bb6d00241b1f551003d8dd33dd4bcb0e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">047d00241b1f551003d8dd33dd4bcb15</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>c47d00241b1f551003d8dd33dd4bcb15</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:34</sys_updated_on>
+        <ui_id>cdd33bc5-6b81-47dc-a097-71e0188ad8fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c47d00241b1f551003d8dd33dd4bcb15"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c47d00241b1f551003d8dd33dd4bcb15</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>887d00241b1f551003d8dd33dd4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <value>1970-01-01 00:00:10</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c47d00241b1f551003d8dd33dd4bcb15</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:57</sys_created_on>
+        <sys_id>c47d00241b1f551003d8dd33dd4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:57</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=c47d00241b1f551003d8dd33dd4bcb15"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f^id=c47d00241b1f551003d8dd33dd4bcb15"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c47d00241b1f551003d8dd33dd4bcb15"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c47d00241b1f551003d8dd33dd4bcb15"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT IN6b6dcce01b1f551003d8dd33dd4bcbaa,ab6dcce01b1f551003d8dd33dd4bcbad,e36dcce01b1f551003d8dd33dd4bcba7,eb6dcce01b1f551003d8dd33dd4bcbb0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>instance</element>
+        <help/>
+        <hint/>
+        <label>instance</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>6b6dcce01b1f551003d8dd33dd4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>scope</element>
+        <help/>
+        <hint/>
+        <label>scope</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>ab6dcce01b1f551003d8dd33dd4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>version</element>
+        <help/>
+        <hint/>
+        <label>version</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>e36dcce01b1f551003d8dd33dd4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>branch</element>
+        <help/>
+        <hint/>
+        <label>branch</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>eb6dcce01b1f551003d8dd33dd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT INef6dcce01b1f551003d8dd33dd4bcbcf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:33:56</sys_created_on>
+        <sys_id>ef6dcce01b1f551003d8dd33dd4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:33:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=065c40a01b1f551003d8dd33dd4bcb2f"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=065c40a01b1f551003d8dd33dd4bcb2f^sys_idNOT INfc9d08241b1f551003d8dd33dd4bcb10"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@53969a</plan>
+        <plan_id display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</plan_id>
+        <snapshot>fe8dc0241b1f551003d8dd33dd4bcb0c</snapshot>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc9d08241b1f551003d8dd33dd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:33</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cicd_pipeline__install_from_github</internal_name>
+        <label_cache>[{"name":"cdd33bc5-6b81-47dc-a097-71e0188ad8fc.scheduled_end_date_time","label":"6 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"cdd33bc5-6b81-47dc-a097-71e0188ad8fc.total_duration","label":"6 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.__dont_treat_as_error__","label":"3 - Get Execution Tracker Progress➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"4963f3fc-b779-4a2a-9a75-15dea88f207f"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.__action_status__","label":"3 - Get Execution Tracker Progress➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD66c9d20c6c22301064b291b0d254280b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"54b0ac46-97ae-4b8e-919f-772a7bd40bb3"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.result_url","label":"3 - Get Execution Tracker Progress➛Result URL","reference_display":"Result URL","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"4e961a2d-0358-4075-8870-de60151a294c"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.result_id","label":"3 - Get Execution Tracker Progress➛Result ID","reference_display":"Result ID","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"aa917b40-8dd8-4e76-bb37-b85e09098eb9"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.http_status","label":"3 - Get Execution Tracker Progress➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"abc8f70c-ad39-48c7-a938-718cc6b84c9e"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status_detail","label":"3 - Get Execution Tracker Progress➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"aba2693c-8e41-4197-85d2-c69a56226746"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status_message","label":"3 - Get Execution Tracker Progress➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"cb49cb57-a9e6-4ae3-be37-008513105ef0"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status_label","label":"3 - Get Execution Tracker Progress➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"d4e47a49-950f-4026-b9be-8a55ff5c8ca5"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.percent_complete","label":"3 - Get Execution Tracker Progress➛Percent Complete","reference_display":"Percent Complete","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"83b61b07-965f-472e-a17c-8ca96df80df0"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.error","label":"3 - Get Execution Tracker Progress➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2131edb5-0595-4477-a3e5-0c9fda01dc69"}},{"name":"46979ad8-3334-4c55-801f-5625b293b2b7.status","label":"3 - Get Execution Tracker Progress➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"71330b47-3466-47ab-b95c-21b7b659a556"}},{"name":"subflow.branch","label":"Input➛branch","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"82ab3cb5-f8a8-4b0d-aaad-5617ae1c9648"}},{"name":"subflow.instance","label":"Input➛instance","reference":"","reference_display":"","type":"url","base_type":"url","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"6a3a1535-7548-4d79-93d4-c457ffc20c07"}},{"name":"subflow.scope","label":"Input➛scope","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"af3e8702-4223-4f40-9e74-5e605ff10e07"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.__dont_treat_as_error__","label":"1 - Apply Changes From Source Control With Scope➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1f6c96c7-1c45-4f0a-92e0-a9a7b5ea315a"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.__action_status__","label":"1 - Apply Changes From Source Control With Scope➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDeb78bce6f712301068329383fcabfe0b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d2b3237c-8740-4079-9133-037600036406"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.progress_id","label":"1 - Apply Changes From Source Control With Scope➛Progress Id","reference_display":"Progress Id","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2a0a5f7b-6a8a-4543-8a87-7612084c7261"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status_detail","label":"1 - Apply Changes From Source Control With Scope➛Status Detail","reference_display":"Status Detail","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"f40c7ecd-dde5-4ef4-8ebd-6014144c5517"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status_message","label":"1 - Apply Changes From Source Control With Scope➛Status Message","reference_display":"Status Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"bae0b22d-5e04-4398-9363-e801b2dc1298"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.http_status","label":"1 - Apply Changes From Source Control With Scope➛HTTP Status","reference_display":"HTTP Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c39351f6-936f-461c-a662-5416b122dcfd"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status_label","label":"1 - Apply Changes From Source Control With Scope➛Status Label","reference_display":"Status Label","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"e9c29b0d-9923-41b3-a6ec-c4b3dd23bef4"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.progress_url","label":"1 - Apply Changes From Source Control With Scope➛Progress URL","reference_display":"Progress URL","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"b0cb4096-95f1-480e-b798-ad83a9ab68f2"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.error","label":"1 - Apply Changes From Source Control With Scope➛Error","reference_display":"Error","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"98902130-5bce-4d12-8084-32cd1e92048c"}},{"name":"fe52565d-1b17-4a80-8d31-ee71d65c5998.status","label":"1 - Apply Changes From Source Control With Scope➛Status","reference_display":"Status","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"cba6f28b-43d4-4d51-89ab-44c0c318426f"}}]</label_cache>
+        <master>true</master>
+        <name>CI/CD Pipeline - Install From GitHub</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CI/CD Pipeline - Install From GitHub">065c40a01b1f551003d8dd33dd4bcb2f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe8dc0241b1f551003d8dd33dd4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:26</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c^id=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT IN328dc0241b1f551003d8dd33dd4bcb0e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fe8dc0241b1f551003d8dd33dd4bcb0c</id>
+        <name>CI/CD Pipeline - Install From GitHub</name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:26</sys_created_on>
+        <sys_id>328dc0241b1f551003d8dd33dd4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=328dc0241b1f551003d8dd33dd4bcb0e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT IN278d84241b1f551003d8dd33dd4bcb6b,2f8d84241b1f551003d8dd33dd4bcb7a,728dc0241b1f551003d8dd33dd4bcb0f,ef8d84241b1f551003d8dd33dd4bcb72"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=url,uiTypeLabel=URL,uiUniqueId=6a3a1535-7548-4d79-93d4-c457ffc20c07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="URL">url</internal_type>
+        <label>instance</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</model>
+        <model_id>fe8dc0241b1f551003d8dd33dd4bcb0c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>278d84241b1f551003d8dd33dd4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=82ab3cb5-f8a8-4b0d-aaad-5617ae1c9648</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>branch</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>branch</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</model>
+        <model_id>fe8dc0241b1f551003d8dd33dd4bcb0c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>2f8d84241b1f551003d8dd33dd4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=59c8fb64-cd83-4793-9c2d-85df54cc1cfc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>version</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>version</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</model>
+        <model_id>fe8dc0241b1f551003d8dd33dd4bcb0c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:26</sys_created_on>
+        <sys_id>728dc0241b1f551003d8dd33dd4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=af3e8702-4223-4f40-9e74-5e605ff10e07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scope</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>scope</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</model>
+        <model_id>fe8dc0241b1f551003d8dd33dd4bcb0c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>ef8d84241b1f551003d8dd33dd4bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT INaf8d84241b1f551003d8dd33dd4bcb84"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a5534a3f-3cfa-4766-b1e7-11177120c47a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</model>
+        <model_id>fe8dc0241b1f551003d8dd33dd4bcb0c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>af8d84241b1f551003d8dd33dd4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT IN338d84241b1f551003d8dd33dd4bcbe9,f38d84241b1f551003d8dd33dd4bcbd1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Execution Tracker Progress">ce5cf2b877433300d4bdaeca781061bc</action_type>
+        <action_type_parent display_value="Get Execution Tracker Progress">f8073ef477433300d4bdaeca78106176</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</flow>
+        <order>3</order>
+        <parent_ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:30</sys_created_on>
+        <sys_id>338d84241b1f551003d8dd33dd4bcbe9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:30</sys_updated_on>
+        <ui_id>46979ad8-3334-4c55-801f-5625b293b2b7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=338d84241b1f551003d8dd33dd4bcbe9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>338d84241b1f551003d8dd33dd4bcbe9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:30</sys_created_on>
+        <sys_id>0c9d84241b1f551003d8dd33dd4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:30</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">b09b58a877133300d4bdaeca781061ff</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=338d84241b1f551003d8dd33dd4bcbe9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>338d84241b1f551003d8dd33dd4bcbe9</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:30</sys_created_on>
+        <sys_id>c49d84241b1f551003d8dd33dd4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ce5cf2b877433300d4bdaeca781061bc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>instance_url</field>
+        <id>338d84241b1f551003d8dd33dd4bcbe9</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:30</sys_created_on>
+        <sys_id>378d84241b1f551003d8dd33dd4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ce5cf2b877433300d4bdaeca781061bc</table>
+        <value>{{subflow.instance}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>progress_id</field>
+        <id>338d84241b1f551003d8dd33dd4bcbe9</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:30</sys_created_on>
+        <sys_id>889d84241b1f551003d8dd33dd4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ce5cf2b877433300d4bdaeca781061bc</table>
+        <value>{{fe52565d-1b17-4a80-8d31-ee71d65c5998.progress_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=338d84241b1f551003d8dd33dd4bcbe9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=338d84241b1f551003d8dd33dd4bcbe9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Apply Changes From Source Control With Scope">045c72b877433300d4bdaeca7810618f</action_type>
+        <action_type_parent display_value="Apply Changes From Source Control With Scope">1d04b6b477433300d4bdaeca78106184</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>f38d84241b1f551003d8dd33dd4bcbd1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <ui_id>fe52565d-1b17-4a80-8d31-ee71d65c5998</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f38d84241b1f551003d8dd33dd4bcbd1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f38d84241b1f551003d8dd33dd4bcbd1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>b78d84241b1f551003d8dd33dd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <value>752a91887740001038e286a2681061fb</value>
+        <variable display_value="Credential Alias">91aa986877133300d4bdaeca781061d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f38d84241b1f551003d8dd33dd4bcbd1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>app_scope</field>
+        <id>f38d84241b1f551003d8dd33dd4bcbd1</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>378d84241b1f551003d8dd33dd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value>{{subflow.scope}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>branch_name</field>
+        <id>f38d84241b1f551003d8dd33dd4bcbd1</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>bf8d84241b1f551003d8dd33dd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value>{{subflow.branch}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>f38d84241b1f551003d8dd33dd4bcbd1</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>fb8d84241b1f551003d8dd33dd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>instance_url</field>
+        <id>f38d84241b1f551003d8dd33dd4bcbd1</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>738d84241b1f551003d8dd33dd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_045c72b877433300d4bdaeca7810618f</table>
+        <value>{{subflow.instance}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f38d84241b1f551003d8dd33dd4bcbd1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f38d84241b1f551003d8dd33dd4bcbd1"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT IN378d84241b1f551003d8dd33dd4bcbb2,678d84241b1f551003d8dd33dd4bcbab,ab8d84241b1f551003d8dd33dd4bcbae,eb8d84241b1f551003d8dd33dd4bcba7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">047d00241b1f551003d8dd33dd4bcb15</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>378d84241b1f551003d8dd33dd4bcbb2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <ui_id>cdd33bc5-6b81-47dc-a097-71e0188ad8fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=378d84241b1f551003d8dd33dd4bcbb2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>378d84241b1f551003d8dd33dd4bcbb2</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>3f8d84241b1f551003d8dd33dd4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <value>1970-01-01 00:00:10</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>378d84241b1f551003d8dd33dd4bcbb2</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>7b8d84241b1f551003d8dd33dd4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=378d84241b1f551003d8dd33dd4bcbb2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c^id=378d84241b1f551003d8dd33dd4bcbb2"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=378d84241b1f551003d8dd33dd4bcbb2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=378d84241b1f551003d8dd33dd4bcbb2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f76d00241b1f551003d8dd33dd4bcb0e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>678d84241b1f551003d8dd33dd4bcbab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <ui_id>93a4321a-7aac-49ed-806a-d47f5eb06c4e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=678d84241b1f551003d8dd33dd4bcbab"/>
+    <sys_element_mapping action="delete_multiple" query="id=678d84241b1f551003d8dd33dd4bcbab"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>678d84241b1f551003d8dd33dd4bcbab</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>e38d84241b1f551003d8dd33dd4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{46979ad8-3334-4c55-801f-5625b293b2b7.http_status}}!=200﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c^id=678d84241b1f551003d8dd33dd4bcbab"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=678d84241b1f551003d8dd33dd4bcbab"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=678d84241b1f551003d8dd33dd4bcbab"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7f6d00241b1f551003d8dd33dd4bcb11</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>error</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id>93a4321a-7aac-49ed-806a-d47f5eb06c4e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>ab8d84241b1f551003d8dd33dd4bcbae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <ui_id>e77067f3-f1e3-484b-adfe-28c9b603f247</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ab8d84241b1f551003d8dd33dd4bcbae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ab8d84241b1f551003d8dd33dd4bcbae</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>bb8d84241b1f551003d8dd33dd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <value>1</value>
+        <variable display_value="error">af8d84241b1f551003d8dd33dd4bcb84</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c^id=ab8d84241b1f551003d8dd33dd4bcbae"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ab8d84241b1f551003d8dd33dd4bcbae"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ab8d84241b1f551003d8dd33dd4bcbae"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">776dcce01b1f551003d8dd33dd4bcbe9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CI/CD Pipeline - Install From GitHub">fe8dc0241b1f551003d8dd33dd4bcb0c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>eb8d84241b1f551003d8dd33dd4bcba7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <ui_id>ac7313d2-fe54-4ad3-ba0f-0a8d4496a83e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=eb8d84241b1f551003d8dd33dd4bcba7"/>
+    <sys_element_mapping action="delete_multiple" query="id=eb8d84241b1f551003d8dd33dd4bcba7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>eb8d84241b1f551003d8dd33dd4bcba7</id>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:29</sys_created_on>
+        <sys_id>af8d84241b1f551003d8dd33dd4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{46979ad8-3334-4c55-801f-5625b293b2b7.percent_complete}}=100﻿</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c^id=eb8d84241b1f551003d8dd33dd4bcba7"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=eb8d84241b1f551003d8dd33dd4bcba7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eb8d84241b1f551003d8dd33dd4bcba7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT IN2b8d84241b1f551003d8dd33dd4bcb5b,678d84241b1f551003d8dd33dd4bcb7f,ab8d84241b1f551003d8dd33dd4bcb6f,e78d84241b1f551003d8dd33dd4bcb77"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>version</element>
+        <help/>
+        <hint/>
+        <label>version</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>2b8d84241b1f551003d8dd33dd4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>branch</element>
+        <help/>
+        <hint/>
+        <label>branch</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>678d84241b1f551003d8dd33dd4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>instance</element>
+        <help/>
+        <hint/>
+        <label>instance</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>ab8d84241b1f551003d8dd33dd4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>scope</element>
+        <help/>
+        <hint/>
+        <label>scope</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>e78d84241b1f551003d8dd33dd4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c^sys_idNOT INab8d84241b1f551003d8dd33dd4bcb89"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error</element>
+        <help/>
+        <hint/>
+        <label>error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-17 19:34:28</sys_created_on>
+        <sys_id>ab8d84241b1f551003d8dd33dd4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-17 19:34:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fe8dc0241b1f551003d8dd33dd4bcb0c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>065c40a01b1f551003d8dd33dd4bcb2f</sys_id>
+        <latest_snapshot>fe8dc0241b1f551003d8dd33dd4bcb0c</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>
