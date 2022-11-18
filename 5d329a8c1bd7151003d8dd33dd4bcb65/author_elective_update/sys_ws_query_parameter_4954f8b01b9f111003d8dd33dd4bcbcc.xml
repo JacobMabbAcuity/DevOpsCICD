@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter">
+    <sys_ws_query_parameter action="DELETE">
+        <example_value>5d329a8c1bd7151003d8dd33dd4bcb65</example_value>
+        <name>appId</name>
+        <required>false</required>
+        <short_description/>
+        <sys_class_name>sys_ws_query_parameter</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-18 17:02:50</sys_created_on>
+        <sys_id>4954f8b01b9f111003d8dd33dd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>appId</sys_name>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_4954f8b01b9f111003d8dd33dd4bcbcc</sys_update_name>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-18 17:02:50</sys_updated_on>
+        <web_service_definition display_value="Get Scoped App Version">a72438b01b9f111003d8dd33dd4bcb9d</web_service_definition>
+    </sys_ws_query_parameter>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</application>
+        <file_path/>
+        <instance_id>a0e0bd23db18bb000b9d21c40596199b</instance_id>
+        <instance_name>acuityincdemo3</instance_name>
+        <name>sys_ws_query_parameter_4954f8b01b9f111003d8dd33dd4bcbcc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>5d329a8c1bd7151003d8dd33dd4bcb65</example_value><name>appId</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>jacob.mabb@myacuity.com</sys_created_by><sys_created_on>2022-11-18 17:02:50</sys_created_on><sys_id>4954f8b01b9f111003d8dd33dd4bcbcc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>appId</sys_name><sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package><sys_policy/><sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope><sys_update_name>sys_ws_query_parameter_4954f8b01b9f111003d8dd33dd4bcbcc</sys_update_name><sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by><sys_updated_on>2022-11-18 17:02:50</sys_updated_on><web_service_definition display_value="Get Scoped App Version">a72438b01b9f111003d8dd33dd4bcb9d</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+        <payload_hash>-1316857023</payload_hash>
+        <record_name>appId</record_name>
+        <reverted_from/>
+        <source>80745a001b1b151003d8dd33dd4bcb7f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-18 17:02:50</sys_created_on>
+        <sys_id>3f64bcb01b9f111003d8dd33dd4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1848bb166bc0000001</sys_recorded_at>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-18 17:02:50</sys_updated_on>
+        <type>Scripted REST Query Parameter</type>
+        <update_guid>3764bcb0349f11105f72bd62accd6480</update_guid>
+        <update_guid_history>3764bcb0349f11105f72bd62accd6480:-1316857023</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-18 17:13:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_query_parameter">sys_ws_query_parameter</sys_db_object>
+        <sys_id>49dffbaad5e74539add8b90bfe156269</sys_id>
+        <sys_metadata>4954f8b01b9f111003d8dd33dd4bcbcc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>appId</sys_name>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_scope_delete display_value="">b456db33ac04493c8ff607a8af5476e9</sys_scope_delete>
+        <sys_update_name>sys_ws_query_parameter_4954f8b01b9f111003d8dd33dd4bcbcc</sys_update_name>
+        <sys_update_version display_value="sys_ws_query_parameter_4954f8b01b9f111003d8dd33dd4bcbcc">3f64bcb01b9f111003d8dd33dd4bcb80</sys_update_version>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-18 17:13:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

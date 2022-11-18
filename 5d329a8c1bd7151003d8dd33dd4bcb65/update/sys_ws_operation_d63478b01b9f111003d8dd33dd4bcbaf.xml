@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>getVersion</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var appId = request.pathParams.appId;
+	
+	if (!gs.nil(appId)) {
+		var gr = new GlideRecord('sys_store_app');
+		if (gr.get(appId)) {
+			var httpStatus = 200;
+			var respObj = {
+				version: gr.getValue('version')
+			};
+			response.setBody(respObj);
+			response.setStatus(httpStatus);
+		} else {
+			response.setStatus(400);
+			return {
+				"status": 400,
+				"message": "appId is not valid"
+			};
+		}
+	} else {
+		response.setStatus(400);
+		return {
+			"status": 400,
+			"message": "No appId provided"
+		};
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_acuit_ci_cd_pipe/store_app/getVersion/{appId}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/getVersion/{appId}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-18 17:02:16</sys_created_on>
+        <sys_id>d63478b01b9f111003d8dd33dd4bcbaf</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>getVersion</sys_name>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name>sys_ws_operation_d63478b01b9f111003d8dd33dd4bcbaf</sys_update_name>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-18 17:20:32</sys_updated_on>
+        <web_service_definition display_value="Store App">a72438b01b9f111003d8dd33dd4bcb9d</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
