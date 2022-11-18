@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD8cc289f42edf1110975dcdfcbdc79141</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>5d329a8c1bd7151003d8dd33dd4bcb65</scope_name>
+        <serialized_content>{"FlowDesigner:FD8cc289f42edf1110975dcdfcbdc79141":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD8cc289f42edf1110975dcdfcbdc79141.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"accb0052-2787-4070-995a-5abf1c0271c2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8cc289f42edf1110975dcdfcbdc79141\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>jacob.mabb@myacuity.com</sys_created_by>
+        <sys_created_on>2022-11-18 18:05:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40c289f41bdf111003d8dd33dd4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD8cc289f42edf1110975dcdfcbdc79141</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CI/CD Pipeline" source="x_acuit_ci_cd_pipe">5d329a8c1bd7151003d8dd33dd4bcb65</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CI/CD Pipeline">5d329a8c1bd7151003d8dd33dd4bcb65</sys_scope>
+        <sys_update_name>sys_complex_object_40c289f41bdf111003d8dd33dd4bcb42</sys_update_name>
+        <sys_updated_by>jacob.mabb@myacuity.com</sys_updated_by>
+        <sys_updated_on>2022-11-18 18:05:22</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
